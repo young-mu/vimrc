@@ -1,8 +1,12 @@
+" ----- vim configuration -----
 color evening                       " color scheme (/usr/share/vim/vim72/color/*)
 
 set encoding=utf-8                  " utf-8 coding
 syntax on                           " highlight syntax
 set number                          " display line number
+set showmatch						" match when typing () or []
+set statusline=[%F]%y%r%m%*%=[Line:%l/%L, Column:%c][%p%%]
+set laststatus=2					" always show the statusline
 set ruler                           " enable window ruler
 
 set tabstop=4                       " TAB equals 4 spaces
@@ -13,6 +17,7 @@ set cin                             " 'V&=' autoalignment
 
 set backspace=indent,eol,start      " enable backspace
 set whichwrap=b,s,<,>,[,]           " move among consective lines (visual & insert mode)
+"set nowrap							" disable auto wrap
 
 set incsearch                       " search when typing
 set hlsearch                        " highlight when searching
