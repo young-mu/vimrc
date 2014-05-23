@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# ----- install VIM plugins -----
+# ---------- install VIM plugins ----------
 
 mkdir /tmp/vim_plugins
 tar xzvf vim_plugins.tar.gz -C /tmp/vim_plugins
@@ -18,5 +18,5 @@ unzip /tmp/winmanager.zip -d ~/.vim/
 
 rm -rf /tmp/vim_plugins
 
-# ----- replace vimrc -----
+# ---------- replace vimrc ----------
 cp vimrc ~/.vimrc
