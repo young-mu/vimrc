@@ -1,13 +1,16 @@
-" ----- vim configuration -----
+" ---------- vim configuration ----------
 color evening							" color scheme (/usr/share/vim/vim72/color/*)
 
 set encoding=utf-8						" utf-8 coding
 syntax on								" highlight syntax
 set number								" display line number
+set cursorline							" highlight current line
 set showmatch							" match when typing () or []
 set ruler								" enable window ruler
+set lines=30 columns=100				" default window height and width
+set cmdheight=2							" cmd height equals 2
 set laststatus=2						" always show the statusline
-set statusline=[%F]%y%r%m%*%=[Line:%l/%L,Column:%c][%p%%]
+set statusline=[%F]%y%r%m%*%=\|\ %l/%L,%c\ \|\ %p%%\ \|
 
 set tabstop=4							" TAB equals 4 spaces
 set autoindent							" auto indentation
@@ -28,6 +31,20 @@ set gdefault							" global substitution
 " <F12> switch between .c and .h
 nnoremap <silent> <F12> :A <CR>
 
+" ---------- cscope ----------
+" 'Ctrl + Shift + -' + X
+nmap <C-_>s :cs find s <C-R>=expand("<cword>")<CR><CR>
+nmap <C-_>g :cs find g <C-R>=expand("<cword>")<CR><CR>
+nmap <C-_>d :cs find d <C-R>=expand("<cword>")<CR><CR>
+nmap <C-_>c :cs find t <C-R>=expand("<cword>")<CR><CR>
+nmap <C-_>t :cs find t <C-R>=expand("<cword>")<CR><CR>
+nmap <C-_>e :cs find e <C-R>=expand("<cword>")<CR><CR>
+nmap <C-_>f :cs find f <C-R>=expand("<cfile>")<CR><CR>
+nmap <C-_>i :cs find i <C-R>=expand("<cfile>")<CR><CR>
+:cs add /home/young/test/cscope.out /home/young/test
+set cscopetag							" using cscope as tags
+
+
 " ---------- miniBufExplorer ----------
 let g:miniBufExplMapWindowNavArrows=1	" switch among file buffer using arrows <>
 let g:miniBufExplMapCTabSwitchBufs=1	" swtich among file buffer using <Tab> and <S+Tab>
@@ -45,10 +62,12 @@ let Tlist_Show_One_File=1				" only show current file's tags
 let Tlist_WinWidth=40					" Taglist width
 let Tlist_Exit_OnlyWindow=1				" exit directly when there's Taglist
 let Tlist_Use_Right_Window=1			" Taglist is shown on the right
+let Tlist_Enable_Fold_Column=0			" disable taglist's left column
 
 " ---------- winManager ----------
 " <F7> toggle winManager (FileExplorer & TagList)
 " <F7><F8> show FileExplorer only
 nmap <silent> <F7> :WMToggle <CR>
+let g:persistentBehaviour=0				" exit directly when there's winManager
 let g:winManagerWidth=40				" winManager width
 let g:winManagerWindowLayout='FileExplorer|TagList'
