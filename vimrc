@@ -25,23 +25,30 @@ set gdefault							" global substitution
 "set ignorecase							" ignorecase when searching
 
 " ----- Taglist ------
-" <F8> Taglist toggle
+" <F8> toggle Taglist
 map <silent> <F8> :TlistToggle <CR>
 let Tlist_Show_One_File=1				" only show current file's tags
-let Tlist_WinWidth=40					" taglist width
-let Tlist_Exit_OnlyWindow=1				" exit directly when there's taglist
-let Tlist_Use_Right_Window=1			" taglist is shown on the right
+let Tlist_WinWidth=40					" Taglist width
+let Tlist_Exit_OnlyWindow=1				" exit directly when there's Taglist
+let Tlist_Use_Right_Window=1			" Taglist is shown on the right
 
 " ----- miniBufExplorer -----
 let g:miniBufExplMapWindowNavArrows=1	" switch among file buffer using arrows <>
 let g:miniBufExplMapCTabSwitchBufs=1	" swtich among file buffer using <Tab> and <S+Tab>
 
 " ----- QuickFix -----
-" <F6> switch to next result
-" <F7> switch to previous result
-nmap <silent> <F6> :cn <CR>						
-nmap <silent> <F7> :cp <CR>
+" <F5> switch to next result
+" <F6> switch to previous result
+nmap <silent> <F5> :cn <CR>						
+nmap <silent> <F6> :cp <CR>
 
 " ----- a ------
 " <F12> switch between .c and .h
 nnoremap <silent> <F12> :A <CR>
+
+" ----- winManager -----
+" <F7> toggle winManager (FileExplorer & TagList)
+" <F7><F8> show FileExplorer only
+nmap <silent> <F7> :WMToggle <CR>
+let g:winManagerWindowLayout='FileExplorer|TagList'
+let g:winManagerWidth=40				" winManager width
