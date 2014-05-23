@@ -25,6 +25,7 @@ set gdefault							" global substitution
 "set ignorecase							" ignorecase when searching
 
 " ----- Taglist ------
+" <F8> Taglist toggle
 map <silent> <F8> :TlistToggle <CR>
 let Tlist_Show_One_File=1				" only show current file's tags
 let Tlist_WinWidth=40					" taglist width
@@ -34,3 +35,9 @@ let Tlist_Use_Right_Window=1			" taglist is shown on the right
 " ----- miniBufExplorer -----
 let g:miniBufExplMapWindowNavArrows=1	" switch among file buffer using arrows <>
 let g:miniBufExplMapCTabSwitchBufs=1	" swtich among file buffer using <Tab> and <S+Tab>
+
+" ----- QuickFix -----
+" <F6> switch to next result
+" <F7> switch to previous result
+nmap <silent> <F6> :cn <CR>						
+nmap <silent> <F7> :cp <CR>
