@@ -1,0 +1,5 @@
+VIM configurations
+
+1. apt-get install cscope 
+2. apt-get install exuberant-ctags
+3. ./vimconf.sh
