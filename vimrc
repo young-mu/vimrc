@@ -41,3 +41,7 @@ let g:miniBufExplMapCTabSwitchBufs=1	" swtich among file buffer using <Tab> and 
 " <F7> switch to previous result
 nmap <silent> <F6> :cn <CR>						
 nmap <silent> <F7> :cp <CR>
+
+" ----- a ------
+" <F12> switch between .c and .h
+nnoremap <silent> <F12> :A <CR>
