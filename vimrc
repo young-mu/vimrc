@@ -5,7 +5,7 @@ set t_Co=256							" terminal supports 256 colors
 set encoding=utf-8						" utf-8 coding
 syntax on								" highlight syntax
 set number								" display line number
-"set cursorline							" highlight current line
+set cursorline							" highlight current line
 set showmatch							" match when typing () or []
 set ruler								" enable window ruler
 set lines=30 columns=100				" default window height and width
