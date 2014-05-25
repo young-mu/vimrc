@@ -1,25 +1,45 @@
 #!/bin/sh
 
+# ---------- remove VIM plugins ----------
+
+echo "remove all VIM confiurations set before."
+echo "--------------------"
+rm -rf ~/.vim/*
+rm ~/.vimrc
+
 # ---------- install VIM plugins ----------
 
 mkdir /tmp/vim_plugins
-tar xzvf vim_plugins.tar.gz -C /tmp/vim_plugins
+tar xzf vim_plugins.tar.gz -C /tmp/vim_plugins
 
 # A
+echo "1. install A ..."
+mkdir ~/.vim/plugin
 cp /tmp/vim_plugins/a.vim ~/.vim/plugin/
 # miniBufExplorer
+echo "2. install miniBufExplorer ..."
 cp /tmp/vim_plugins/minibufexpl.vim ~/.vim/plugin/
 # molokai color scheme
+echo "3. install colorscheme molokai ..."
 mkdir ~/.vim/colors
 cp /tmp/vim_plugins/molokai.vim ~/.vim/colors/
 # snipMate
-unzip /tmp/vim_plugins/snipMate.zip -d ~/.vim/
+echo "4. install snipMate ..."
+unzip /tmp/vim_plugins/snipMate.zip -d ~/.vim/ > /dev/null
 # tagList
-unzip /tmp/vim_plugins/taglist_45.zip -d ~/.vim/
+echo "5. install tagList ..."
+unzip /tmp/vim_plugins/taglist_45.zip -d ~/.vim/ > /dev/null
 # winManager
-unzip /tmp/winmanager.zip -d ~/.vim/
+echo "6. install winManager ..."
+unzip /tmp/vim_plugins/winmanager.zip -d ~/.vim/ > /dev/null
 
 rm -rf /tmp/vim_plugins
 
 # ---------- replace vimrc ----------
+echo "7. configure vimrc ..."
 cp vimrc ~/.vimrc
+
+echo "--------------------"
+echo "set all VIM configurations successfully."
+
+# ---------- <END> ----------
