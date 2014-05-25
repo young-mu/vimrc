@@ -9,6 +9,9 @@ tar xzvf vim_plugins.tar.gz -C /tmp/vim_plugins
 cp /tmp/vim_plugins/a.vim ~/.vim/plugin/
 # miniBufExplorer
 cp /tmp/vim_plugins/minibufexpl.vim ~/.vim/plugin/
+# molokai color scheme
+mkdir ~/.vim/colors
+cp /tmp/vim_plugins/molokai.vim ~/.vim/colors/
 # snipMate
 unzip /tmp/vim_plugins/snipMate.zip -d ~/.vim/
 # tagList
