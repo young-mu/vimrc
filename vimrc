@@ -8,7 +8,7 @@ set number								" display line number
 set cursorline							" highlight current line
 set showmatch							" match when typing () or []
 set ruler								" enable window ruler
-set lines=30 columns=100				" default window height and width
+"set lines=30 columns=100				" default window height and width
 set cmdheight=2							" cmd height equals 2
 set laststatus=2						" always show the statusline
 set statusline=[%F]%y%r%m%*%=\|\ %l/%L,%c\ \|\ %p%%\ \|
@@ -42,9 +42,11 @@ nmap <C-_>t :cs find t <C-R>=expand("<cword>")<CR><CR>
 nmap <C-_>e :cs find e <C-R>=expand("<cword>")<CR><CR>
 nmap <C-_>f :cs find f <C-R>=expand("<cfile>")<CR><CR>
 nmap <C-_>i :cs find i <C-R>=expand("<cfile>")<CR><CR>
-:cs add /home/young/test/cscope.out /home/young/test
+:cs add /home/young/Houdini/branches/Houdini_4.1/src/cscope.out /home/young/Houdini/branches/Houdini_4.1/src
 set cscopetag							" using cscope as tags
 
+" ---------- ctags ----------
+set tags=/home/young/Houdini/branches/Houdini_4.1/src/tags
 
 " ---------- miniBufExplorer ----------
 let g:miniBufExplMapWindowNavArrows=1	" switch among file buffer using arrows <>
