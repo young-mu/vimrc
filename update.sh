@@ -20,7 +20,7 @@ for snippet in ${snippets}; do
 done
 
 cd ./vim_plugins/snipMate
-zip -rm snipMate.zip *
+zip -rmq snipMate.zip *
 cd ../..
 mv ./vim_plugins/snipMate/snipMate.zip ./vim_plugins 
 rm -rf ./vim_plugins/snipMate
