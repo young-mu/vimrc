@@ -6,6 +6,7 @@ set encoding=utf-8						" utf-8 coding
 syntax on								" highlight syntax
 set number								" display line number
 set cursorline							" highlight current line
+set showcmd								" show incomplete command
 set showmatch							" match when typing () or []
 set ruler								" enable window ruler
 "set lines=30 columns=100				" default window height and width
@@ -17,7 +18,8 @@ set tabstop=4							" TAB equals 4 spaces
 set autoindent							" auto indentation
 set shiftwidth=4						" auto indentation width
 set cin									" 'V&=' autoalignment
-"set list								" show special chars (ending$, TAB^I)
+set list								" show special chars (tab^I, trail$)
+set listchars=tab:▸\ ,trail:▫			" set tab and trail
 
 set backspace=indent,eol,start			" enable backspace
 set whichwrap=b,s,<,>,[,]				" move among consective lines (visual & insert mode)
