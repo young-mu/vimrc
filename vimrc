@@ -14,6 +14,7 @@ set cmdheight=2							" cmd height equals 2
 set laststatus=2						" always show the statusline
 set statusline=[%F]%y%r%m%*%=\|\ %l/%L,%c\ \|\ %p%%\ \|
 
+set expandtab							" expand tab to spaces
 set tabstop=4							" TAB equals 4 spaces
 set autoindent							" auto indentation
 set shiftwidth=4						" auto indentation width
