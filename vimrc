@@ -8,8 +8,10 @@ set number								" display line number
 set cursorline							" highlight current line
 set showcmd								" show incomplete command
 set showmatch							" match when typing () or []
+set matchtime=2                         " show matched bracket for 0.2s when typing
 set ruler								" enable window ruler
 "set lines=30 columns=100				" default window height and width
+set scrolloff=5                         " set 5 lines visible at least when moving up or down
 set cmdheight=2							" cmd height equals 2
 set laststatus=2						" always show the statusline
 set statusline=[%F]%y%r%m%*%=\|\ %l/%L,%c\ \|\ %p%%\ \|
@@ -19,9 +21,10 @@ set tabstop=4							" TAB equals 4 spaces
 set autoindent							" auto indentation
 set shiftwidth=4						" auto indentation width
 set cin									" 'V&=' autoalignment
-set list								" show special chars (tab^I, trail$)
+"set list								" show special chars (tab^I, trail$)
 set listchars=tab:▸\ ,trail:▫			" set tab and trail
 
+set mouse=a                             " set mouse available (SHIFT to paste)
 set backspace=indent,eol,start			" enable backspace
 set whichwrap=b,s,<,>,[,]				" move among consective lines (visual & insert mode)
 "set nowrap								" disable auto wrap
