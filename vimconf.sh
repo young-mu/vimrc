@@ -1,16 +1,15 @@
 #!/bin/sh
 
-# ---------- remove VIM plugins ----------
+# remove legacy VIM conf. and plugins
+if [[ d ~/.vim ]]; then
+    echo "remove all VIM confiurations set before."
+    echo "--------------------"
+    rm -rf ~/.vim/*
+    rm ~/.vimrc
+fi
 
-echo "remove all VIM confiurations set before."
-echo "--------------------"
-rm -rf ~/.vim/*
-rm ~/.vimrc
-
-# ---------- install VIM plugins ----------
-
-mkdir /tmp/vim_plugins
-tar xzf vim_plugins.tar.gz -C /tmp/vim_plugins
+# install VIM plugins
+tar xzf vim_plugins.tar.gz -C /tmp/
 
 # A
 echo "1. install A ..."
@@ -35,11 +34,9 @@ unzip /tmp/vim_plugins/winmanager.zip -d ~/.vim/ > /dev/null
 
 rm -rf /tmp/vim_plugins
 
-# ---------- replace vimrc ----------
+# update vimrc
 echo "7. configure vimrc ..."
 cp vimrc ~/.vimrc
 
 echo "--------------------"
 echo "set all VIM configurations successfully."
-
-# ---------- <END> ----------
