@@ -1,10 +1,10 @@
 #!/bin/sh
 
 # remove legacy VIM conf. and plugins
-if [[ d ~/.vim ]]; then
+if [ -d ~/.vim/ ]; then
     echo "remove all VIM confiurations set before."
     echo "--------------------"
-    rm -rf ~/.vim/*
+    rm -rf ~/.vim
     rm ~/.vimrc
 fi
 
@@ -13,14 +13,14 @@ tar xzf vim_plugins.tar.gz -C /tmp/
 
 # A
 echo "1. install A ..."
-mkdir ~/.vim/plugin
+mkdir -p ~/.vim/plugin
 cp /tmp/vim_plugins/a.vim ~/.vim/plugin/
 # miniBufExplorer
 echo "2. install miniBufExplorer ..."
 cp /tmp/vim_plugins/minibufexpl.vim ~/.vim/plugin/
 # molokai color scheme
 echo "3. install colorscheme molokai ..."
-mkdir ~/.vim/colors
+mkdir -p ~/.vim/colors
 cp /tmp/vim_plugins/molokai.vim ~/.vim/colors/
 # snipMate
 echo "4. install snipMate ..."
