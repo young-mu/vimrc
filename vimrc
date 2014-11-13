@@ -37,9 +37,9 @@ set gdefault                            " global substitution
 let mapleader=','                       " set <leader> as ,
 " window move (edit mode)
 nnoremap <S-h> <C-w>h
-nnoremap <S-h> <C-w>j
-nnoremap <S-h> <C-w>k
-nnoremap <S-h> <C-w>l
+nnoremap <S-j> <C-w>j
+nnoremap <S-k> <C-w>k
+nnoremap <S-l> <C-w>l
 " select all (edit mode)
 nnoremap <silent> <C-a> ggvG$
 " save (both edit and insert mode)
