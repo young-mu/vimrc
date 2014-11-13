@@ -21,7 +21,7 @@ set tabstop=4                           " TAB equals 4 spaces
 set autoindent                          " auto indentation
 set shiftwidth=4                        " auto indentation width
 set cin                                 " 'V&=' autoalignment
-"set list                               " show special chars (tab^I, trail$)
+set list                               " show special chars (tab^I, trail$)
 set listchars=tab:▸\ ,trail:▫           " set tab and trail
 
 "set mouse=a                             " set mouse available (SHIFT to paste)
