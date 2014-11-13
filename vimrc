@@ -35,15 +35,16 @@ set gdefault                            " global substitution
 "set ignorecase                         " ignorecase when searching
 
 let mapleader=','                       " set <leader> as ,
-" window move (edit mode)
+" window move
 nnoremap <S-h> <C-w>h
 nnoremap <S-j> <C-w>j
 nnoremap <S-k> <C-w>k
 nnoremap <S-l> <C-w>l
-" select all (edit mode)
+" select all
 nnoremap <silent> <C-a> ggvG$
-" save (both edit and insert mode)
-noremap <silent> <C-s> :w<CR>
+" save
+nnoremap <C-s> :w<CR>
+inoremap <C-s> <ESC>:w<CR>i
 
 " ---------- A ----------
 " <F12> switch between .c and .h
@@ -72,7 +73,7 @@ let g:miniBufExplMapCTabSwitchBufs=1    " swtich among file buffer using <Tab> a
 " ---------- QuickFix ----------
 " <F5> switch to next result
 " <F6> switch to previous result
-nmap <silent> <F5> :cn <CR>                     
+nmap <silent> <F5> :cn <CR>
 nmap <silent> <F6> :cp <CR>
 
 " ---------- Taglist -----------
