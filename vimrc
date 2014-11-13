@@ -34,6 +34,17 @@ set hlsearch                            " highlight when searching
 set gdefault                            " global substitution
 "set ignorecase                         " ignorecase when searching
 
+let mapleader=','                       " set <leader> as ,
+" window move (edit mode)
+nnoremap <S-h> <C-w>h
+nnoremap <S-h> <C-w>j
+nnoremap <S-h> <C-w>k
+nnoremap <S-h> <C-w>l
+" select all (edit mode)
+nnoremap <silent> <C-a> ggvG$
+" save (both edit and insert mode)
+noremap <silent> <C-s> :w<CR>
+
 " ---------- A ----------
 " <F12> switch between .c and .h
 nnoremap <silent> <F12> :A <CR>
