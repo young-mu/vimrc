@@ -34,17 +34,24 @@ set hlsearch                            " highlight when searching
 set gdefault                            " global substitution
 "set ignorecase                         " ignorecase when searching
 
-let mapleader=','                       " set <leader> as ,
 " window move
 nnoremap <S-h> <C-w>h
 nnoremap <S-j> <C-w>j
 nnoremap <S-k> <C-w>k
 nnoremap <S-l> <C-w>l
+" window split
+nnoremap wv <C-w>v
+nnoremap wc <C-w>c
+nnoremap wh <C-w>s
 " select all
 nnoremap <silent> <C-a> ggvG$
 " save ('stty -ixon' first)
 nnoremap <C-s> :w<CR>
 inoremap <C-s> <ESC>:w<CR>i
+
+let mapleader=','
+nnoremap <silent> <leader>ee :e ~/.vimrc<CR>
+nnoremap <silent> <leader>ss :source ~/.vimrc<CR>
 
 " ---------- A ----------
 " <F12> switch between .c and .h
