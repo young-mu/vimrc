@@ -48,7 +48,7 @@ inoremap <C-s> <ESC>:w<CR>i
 
 " ---------- A ----------
 " <F12> switch between .c and .h
-nnoremap <silent> <F12> :A <CR>
+nnoremap <silent> <F12> :A<CR>
 
 " ---------- cscope ----------
 " 'Ctrl + Shift + -' + X
@@ -64,7 +64,7 @@ nmap <C-_>i :cs find i <C-R>=expand("<cfile>")<CR><CR>
 set cscopetag                           " using cscope as tags
 
 " ---------- ctags ----------
-set tags=/home/young/AOSP/5.0.0_r1/tags
+set tags=/home/young/AOSP/Lollipop/tags
 
 " ---------- miniBufExplorer ----------
 let g:miniBufExplMapWindowNavArrows=1   " switch among file buffer using arrows <>
@@ -73,12 +73,12 @@ let g:miniBufExplMapCTabSwitchBufs=1    " swtich among file buffer using <Tab> a
 " ---------- QuickFix ----------
 " <F5> switch to next result
 " <F6> switch to previous result
-nmap <silent> <F5> :cn <CR>
-nmap <silent> <F6> :cp <CR>
+nmap <silent> <F5> :cn<CR>
+nmap <silent> <F6> :cp<CR>
 
 " ---------- Taglist -----------
 " <F8> toggle Taglist
-map <silent> <F8> :TlistToggle <CR>
+map <silent> <F8> :TlistToggle<CR>
 let Tlist_Show_One_File=1               " only show current file's tags
 let Tlist_WinWidth=40                   " Taglist width
 let Tlist_Exit_OnlyWindow=1             " exit directly when there's Taglist
@@ -88,7 +88,7 @@ let Tlist_Enable_Fold_Column=0          " disable taglist's left column
 " ---------- winManager ----------
 " <F7> toggle winManager (FileExplorer & TagList)
 " <F7><F8> show FileExplorer only
-nmap <silent> <F7> :WMToggle <CR>
+nmap <silent> <F7> :WMToggle<CR>
 let g:persistentBehaviour=0             " exit directly when there's winManager
 let g:winManagerWidth=40                " winManager width
 let g:winManagerWindowLayout='FileExplorer|TagList'
