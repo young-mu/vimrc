@@ -42,7 +42,7 @@ nnoremap <S-k> <C-w>k
 nnoremap <S-l> <C-w>l
 " select all
 nnoremap <silent> <C-a> ggvG$
-" save
+" save ('stty -ixon' first)
 nnoremap <C-s> :w<CR>
 inoremap <C-s> <ESC>:w<CR>i
 

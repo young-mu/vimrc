@@ -1,5 +1,5 @@
 VIM configurations for Linux
 
-1. apt-get install cscope 
-2. apt-get install exuberant-ctags
+1. apt-get install cscope exuberant-ctags
+2. echo "stty -ixon" >> ~/.bashrc
 3. ./vimconf.sh
