@@ -61,10 +61,10 @@ nmap <C-_>e :cs find e <C-R>=expand("<cword>")<CR><CR>
 nmap <C-_>f :cs find f <C-R>=expand("<cfile>")<CR><CR>
 nmap <C-_>i :cs find i <C-R>=expand("<cfile>")<CR><CR>
 ":cs add /home/young/project/src/cscope.out /home/young/project/src
-"set cscopetag                           " using cscope as tags
+set cscopetag                           " using cscope as tags
 
 " ---------- ctags ----------
-set tags=/home/young/AOSP/5.0.0_r5/tags
+set tags=/home/young/AOSP/5.0.0_r1/tags
 
 " ---------- miniBufExplorer ----------
 let g:miniBufExplMapWindowNavArrows=1   " switch among file buffer using arrows <>
@@ -92,3 +92,8 @@ nmap <silent> <F7> :WMToggle <CR>
 let g:persistentBehaviour=0             " exit directly when there's winManager
 let g:winManagerWidth=40                " winManager width
 let g:winManagerWindowLayout='FileExplorer|TagList'
+
+" source local vimrc
+if filereadable(expand("~/.vimrc.local"))
+    source ~/.vimrc.local
+endif
