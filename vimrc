@@ -48,7 +48,17 @@ nnoremap <silent> <C-a> ggvG$
 " save ('stty -ixon' first)
 nnoremap <C-s> :w<CR>
 inoremap <C-s> <ESC>:w<CR>i
+" trailspace search and delete
+nnoremap ts /.*\s\+$<CR>
+nnoremap td :%s/\s\+$//<CR>
+" add and remove comment //
+vnoremap 0 <C-v>I//<ESC>
+vnoremap 9 <C-v><right>x
+" add and remove comment #
+vnoremap 8 <C-v>I#<ESC>
+vnoremap 7 <C-v>x
 
+" set comma as prefix
 let mapleader=','
 nnoremap <silent> <leader>ee :e ~/.vimrc<CR>
 nnoremap <silent> <leader>ss :source ~/.vimrc<CR>
@@ -76,6 +86,7 @@ set tags=/home/young/AOSP/Lollipop/tags
 " ---------- miniBufExplorer ----------
 let g:miniBufExplMapWindowNavArrows=1   " switch among file buffer using arrows <>
 let g:miniBufExplMapCTabSwitchBufs=1    " swtich among file buffer using <Tab> and <S+Tab>
+nmap <S-tab> <C-w><UP><TAB><CR>
 
 " ---------- QuickFix ----------
 " <F5> switch to next result
