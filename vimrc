@@ -52,10 +52,10 @@ inoremap <C-s> <ESC>:w<CR>i
 nnoremap ts /.*\s\+$<CR>
 nnoremap td :%s/\s\+$//<CR>
 " add and remove comment //
-vnoremap 0 <C-v>I//<ESC>
+vnoremap 0 <C-v>^I//<ESC>
 vnoremap 9 <C-v><right>x
 " add and remove comment #
-vnoremap 8 <C-v>I#<ESC>
+vnoremap 8 <C-v>^I#<ESC>
 vnoremap 7 <C-v>x
 
 " set comma as prefix
