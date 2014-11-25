@@ -45,9 +45,11 @@ nnoremap wc <C-w>c
 nnoremap wh <C-w>s
 " select all
 nnoremap <silent> <C-a> ggvG$
-" save ('stty -ixon' first)
+" save & quit ('stty -ixon' first)
 nnoremap <C-s> :w<CR>
 inoremap <C-s> <ESC>:w<CR>i
+nnoremap <C-q> :qa!<CR>
+inoremap <C-q> <ESC>:qa!<CR>
 " trailspace search and delete
 nnoremap ts /.*\s\+$<CR>
 nnoremap td :%s/\s\+$//<CR>
