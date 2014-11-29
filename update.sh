@@ -13,7 +13,7 @@ unzip -q ./vim_plugins/snipMate.zip -d ./vim_plugins/snipMate
 snippets=`ls -1 ~/.vim/snippets`
 
 for snippet in ${snippets}; do
-    diff ~/.vim/snippets/${snippet} ./vim_plugins/snipMate/snippets/${snippet} 2> /dev/null
+    diff ~/.vim/snippets/${snippet} ./vim_plugins/snipMate/snippets/${snippet} &> /dev/null
     ret=`echo $?`
     if [[ ${ret} -eq 1 ]]; then
         cp ~/.vim/snippets/${snippet} ./vim_plugins/snipMate/snippets/${snippet}
