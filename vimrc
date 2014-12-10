@@ -65,6 +65,13 @@ let mapleader=','
 nnoremap <silent> <leader>ee :e ~/.vimrc<CR>
 nnoremap <silent> <leader>ss :source ~/.vimrc<CR>
 
+" toggle number showing
+nnoremap <silent> <F3> :set nu!<CR>
+
+" customized commands
+" show keyword number
+command -nargs=1 Num %s/<args>//n
+
 " ---------- A ----------
 " <F12> switch between .c and .h
 nnoremap <silent> <F12> :A<CR>
