@@ -29,8 +29,8 @@ unzip /tmp/vim_plugins/snipMate.zip -d ~/.vim/ > /dev/null
 echo "5. install tagList ..."
 unzip /tmp/vim_plugins/taglist_45.zip -d ~/.vim/ > /dev/null
 # winManager
-echo "6. install winManager ..."
-unzip /tmp/vim_plugins/winmanager.zip -d ~/.vim/ > /dev/null
+echo "6. install NerdTree ..."
+unzip /tmp/vim_plugins/nerdtree.zip -d ~/.vim/ > /dev/null
 
 rm -rf /tmp/vim_plugins
 

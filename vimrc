@@ -66,7 +66,7 @@ nnoremap <silent> <leader>ee :e ~/.vimrc<CR>
 nnoremap <silent> <leader>ss :source ~/.vimrc<CR>
 
 " toggle number showing
-nnoremap <silent> <F3> :set nu!<CR>
+nnoremap <silent> <F5> :set nu!<CR>
 
 " customized commands
 " show keyword number
@@ -97,11 +97,9 @@ let g:miniBufExplMapWindowNavArrows=1   " switch among file buffer using arrows 
 let g:miniBufExplMapCTabSwitchBufs=1    " swtich among file buffer using <Tab> and <S+Tab>
 nmap <S-tab> <C-w><UP><TAB><CR>
 
-" ---------- QuickFix ----------
-" <F5> switch to next result
-" <F6> switch to previous result
-nmap <silent> <F5> :cn<CR>
-nmap <silent> <F6> :cp<CR>
+" ---------- NerdTree ----------
+" <F7> toggle NerdTree
+nmap <silent> <F7> :NERDTreeToggle<CR>
 
 " ---------- Taglist -----------
 " <F8> toggle Taglist
@@ -111,14 +109,6 @@ let Tlist_WinWidth=45                   " Taglist width
 let Tlist_Exit_OnlyWindow=1             " exit directly when there's Taglist
 let Tlist_Use_Right_Window=1            " Taglist is shown on the right
 let Tlist_Enable_Fold_Column=0          " disable taglist's left column
-
-" ---------- winManager ----------
-" <F7> toggle winManager (FileExplorer & TagList)
-" <F7><F8> show FileExplorer only
-nmap <silent> <F7> :WMToggle<CR>
-let g:persistentBehaviour=0             " exit directly when there's winManager
-let g:winManagerWidth=40                " winManager width
-let g:winManagerWindowLayout='FileExplorer|TagList'
 
 " source local vimrc
 if filereadable(expand("~/.vimrc.local"))
