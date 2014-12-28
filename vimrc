@@ -96,6 +96,7 @@ set tags=/home/young/AOSP/Lollipop/tags
 let g:miniBufExplMapWindowNavArrows=1   " switch among file buffer using arrows <>
 let g:miniBufExplMapCTabSwitchBufs=1    " swtich among file buffer using <Tab> and <S+Tab>
 nmap <S-tab> <C-w><UP><TAB><CR>
+nmap <S-d> <C-w><UP>d<C-w><DOWN>
 
 " ---------- NerdTree ----------
 " <F7> toggle NerdTree
