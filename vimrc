@@ -17,6 +17,7 @@ set laststatus=2                        " always show the statusline
 set statusline=[%F]%y%r%m%*%=\|\ %l/%L,%c\ \|\ %p%%\ \|
 
 set expandtab                           " expand tab to spaces
+autocmd FileType make set noexpandtab   " adopt tab when editting make file
 set tabstop=4                           " TAB equals 4 spaces
 set autoindent                          " auto indentation
 set shiftwidth=4                        " auto indentation width
