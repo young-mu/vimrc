@@ -19,9 +19,9 @@ set statusline=[%F]%y%r%m%*%=\|\ %l/%L,%c\ \|\ %p%%\ \|
 set expandtab                           " expand tab to spaces
 autocmd FileType make set noexpandtab   " adopt tab when editting make file
 set tabstop=4                           " TAB equals 4 spaces
+set softtabstop=4                       " backspace equals -4 spaces
 set autoindent                          " auto indentation
 set shiftwidth=4                        " auto indentation width
-set softtabstop=4                       " backspace equals -4 spaces
 set cin                                 " 'V&=' autoalignment
 set list                               " show special chars (tab^I, trail$)
 set listchars=tab:▸\ ,trail:▫           " set tab and trail
