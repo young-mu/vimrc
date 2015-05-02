@@ -55,9 +55,11 @@ inoremap <C-q> <ESC>:qa!<CR>
 " trailspace search and delete
 nnoremap ts /.*\s\+$<CR>
 nnoremap td :%s/\s\+$//<CR>
-" quick up/down move
-nnoremap <S-j> 5j<CR>
-nnoremap <S-k> 5k<CR>
+" quick up/down/left/right move
+nnoremap <S-j> 5j
+nnoremap <S-k> 5k
+nnoremap <S-h> 5h
+nnoremap <S-l> 5l
 " add and remove comment //
 vnoremap 0 <C-v>^50hI//<ESC>
 vnoremap 9 <C-v>lx<ESC>
