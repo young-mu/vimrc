@@ -37,10 +37,10 @@ set gdefault                            " global substitution
 "set ignorecase                         " ignorecase when searching
 
 " window move
-nnoremap <S-h> <C-w>h
-nnoremap <S-j> <C-w>j
-nnoremap <S-k> <C-w>k
-nnoremap <S-l> <C-w>l
+nnoremap <C-S-h> <C-w>h
+nnoremap <C-S-j> <C-w>j
+nnoremap <C-S-k> <C-w>k
+nnoremap <C-S-l> <C-w>l
 " window split
 nnoremap wv <C-w>v
 nnoremap wc <C-w>c
