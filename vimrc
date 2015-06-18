@@ -39,6 +39,10 @@ set hlsearch                            " highlight when searching
 set gdefault                            " global substitution
 "set ignorecase                         " ignorecase when searching
 
+" automatically save and resotre vim cursor and foldings
+autocmd BufWinLeave * mkview
+autocmd BufWInEnter * loadview
+
 " window move
 nnoremap <C-S-h> <C-w>h
 nnoremap <C-S-j> <C-w>j
