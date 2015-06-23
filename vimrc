@@ -40,8 +40,8 @@ set gdefault                            " global substitution
 "set ignorecase                         " ignorecase when searching
 
 " automatically save and resotre vim cursor and foldings
-autocmd BufWinLeave * mkview
-autocmd BufWInEnter * loadview
+autocmd BufWinLeave ?* mkview
+autocmd BufWinEnter ?* loadview
 
 " window move
 nnoremap <C-S-h> <C-w>h
