@@ -67,6 +67,10 @@ nnoremap <S-j> 5j
 nnoremap <S-k> 5k
 nnoremap <S-h> 5h
 nnoremap <S-l> 5l
+nnoremap <C-j> 15j
+nnoremap <C-k> 15k
+nnoremap <C-h> 15h
+nnoremap <C-l> 15l
 " add and remove comment //
 vnoremap 0 <C-v>^50hI//<ESC>
 vnoremap 9 <C-v>lx<ESC>
