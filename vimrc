@@ -26,7 +26,8 @@ set autoindent                          " auto indentation
 set shiftwidth=4                        " auto indentation width
 autocmd FileType html set shiftwidth=2
 set cin                                 " 'V&=' autoalignment
-set list                               " show special chars (tab^I, trail$)
+set list                                " show special chars (tab^I, trail$)
+"set nolist                             " don't show special chars
 set listchars=tab:▸\ ,trail:▫           " set tab and trail
 
 "set mouse=a                             " set mouse available (SHIFT to paste)
