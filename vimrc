@@ -115,7 +115,7 @@ set tags=/home/young/AOSP/Lollipop/tags
 nmap <silent> <tab> :bn<CR>
 nmap <silent> <S-tab> :bp<CR>
 nmap <silent> <S-d> :bd<CR>
-let mapleader='.'
+let mapleader=','
 nnoremap <silent> <leader>1 :b1<CR>
 nnoremap <silent> <leader>2 :b2<CR>
 nnoremap <silent> <leader>3 :b3<CR>
