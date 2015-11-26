@@ -112,11 +112,18 @@ set cscopetag                           " using cscope as tags
 set tags=/home/young/AOSP/Lollipop/tags
 
 " ---------- miniBufExplorer ----------
-let g:miniBufExplMapWindowNavArrows=1   " switch among file buffer using arrows <>
-let g:miniBufExplMapCTabSwitchBufs=1    " swtich among file buffer using <Tab> and <S+Tab>
-nmap <tab> <C-w><UP><TAB><CR>
-nmap <S-tab> <C-w><UP><S-TAB><CR>
-nmap <S-d> <C-w><UP>d<C-w><DOWN>
+nmap <silent> <tab> :bn<CR>
+nmap <silent> <S-tab> :bp<CR>
+nmap <silent> <S-d> :bd<CR>
+let mapleader='.'
+nnoremap <silent> <leader>1 :b1<CR>
+nnoremap <silent> <leader>2 :b2<CR>
+nnoremap <silent> <leader>3 :b3<CR>
+nnoremap <silent> <leader>4 :b4<CR>
+nnoremap <silent> <leader>5 :b5<CR>
+nnoremap <silent> <leader>6 :b6<CR>
+nnoremap <silent> <leader>7 :b7<CR>
+nnoremap <silent> <leader>8 :b8<CR>
 
 " ---------- NerdTree ----------
 " <F7> toggle NerdTree
