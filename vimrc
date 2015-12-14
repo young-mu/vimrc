@@ -112,8 +112,11 @@ set cscopetag                           " using cscope as tags
 set tags=/home/young/AOSP/Lollipop/tags
 
 " ---------- miniBufExplorer ----------
+" next filebuf
 nmap <silent> <tab> :bn<CR>
+" previous filebuf
 nmap <silent> <S-tab> :bp<CR>
+" close current filebuf
 nmap <silent> <S-d> :bd<CR>
 let mapleader=','
 nnoremap <silent> <leader>1 :b1<CR>
