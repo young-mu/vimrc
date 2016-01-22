@@ -90,6 +90,10 @@ nnoremap <silent> <F5> :set nu!<CR>
 " customized commands
 " show keyword number
 command -nargs=1 Num %s/<args>//n
+" read binary format
+command RB %!xxd
+" write binary format
+command WB %!xxd -r
 
 " ---------- A ----------
 " <F12> switch between .c and .h
