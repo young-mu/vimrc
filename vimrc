@@ -94,6 +94,8 @@ command -nargs=1 Num %s/<args>//n
 command RB %!xxd
 " write binary format
 command WB %!xxd -r
+" convert from dox to unix format
+command DU %!dos2unix
 
 " ---------- A ----------
 " <F12> switch between .c and .h
