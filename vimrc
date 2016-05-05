@@ -147,6 +147,17 @@ let Tlist_Exit_OnlyWindow=1             " exit directly when there's Taglist
 let Tlist_Use_Right_Window=1            " Taglist is shown on the right
 let Tlist_Enable_Fold_Column=0          " disable taglist's left column
 
+if has("cscope")
+    set csprg=/usr/local/bin/cscope
+    set csto=0
+    set cst
+    set nocsverb
+    if filereadable("cscope.out")
+        cs add cscope.out
+    endif
+    set csverb
+endif
+
 " source local vimrc
 if filereadable(expand("~/.vimrc.local"))
     source ~/.vimrc.local
