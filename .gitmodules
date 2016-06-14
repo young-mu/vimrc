@@ -1,4 +1,0 @@
-[submodule "alias"]
-	path = alias
-	url = https://github.com/young-mu/bash_aliases
-    ref = refs/heads/mac
